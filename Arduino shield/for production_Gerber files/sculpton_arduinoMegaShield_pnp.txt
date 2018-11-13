@@ -1,0 +1,44 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=sculpton_arduinoMegaShield
+*Date=14:55:05
+*CreatedBy=Fritzing 0.7.12b.02.13.6882
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;100k;THT;52.7756;-10.7244;-90;Bottom;R8
+2;;;39.2247;-27.2344;0;Bottom;U1
+3;;THT;64.2056;-51.3644;-90;Bottom;J4
+4;;THT;73.0956;-32.3144;0;Bottom;J5
+5;10k;THT;42.6156;-20.8844;-90;Bottom;R6
+6;;THT;36.2656;-3.10441;-90;Bottom;J6
+7;10k;THT;40.0756;-20.8844;-90;Bottom;R7
+8;10k;THT;37.5356;-20.8844;-90;Bottom;R4
+9;;THT;62.9356;-32.3144;180;Bottom;J15
+10;100k;THT;57.8556;-10.7244;-90;Bottom;R10
+11;;THT;74.3656;-8.18441;-90;Bottom;J9
+12;100k;THT;60.3956;-10.7244;-90;Bottom;R11
+13;10k;THT;34.9956;-20.8844;-90;Bottom;R3
+14;10k;THT;29.9156;-20.8844;-90;Bottom;R1
+15;;THT;74.3656;-51.3644;-90;Bottom;J8
+16;;THT;3.24556;-48.8244;-90;Bottom;J3
+17;100k;THT;55.3156;-10.7244;-90;Bottom;R9
+18;;THT;36.2656;-46.2844;-90;Bottom;J13
+19;;THT;68.0156;-32.3144;0;Bottom;J11
+20;10k;THT;32.4556;-20.8844;-90;Bottom;R2
+21;;THT;22.2956;-11.9944;180;Bottom;J14
+22;;THT;17.2156;-17.0744;180;Bottom;J12
+23;220;THT;68.0156;-13.2644;-90;Bottom;R12
+24;;;36.1926;-35.616;0;Bottom;TXT1
+25;;THT;51.5056;-31.0444;-90;Bottom;J17
+26;;THT;18.4856;-3.10441;-90;Bottom;J2
+27;;THT;66.7456;-20.8844;-90;Bottom;J18
+28;;THT;36.2656;-10.7244;-90;Bottom;J10
+29;;THT;56.5856;-20.8844;-90;Bottom;J16
