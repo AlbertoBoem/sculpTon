@@ -1,0 +1,7 @@
+#N canvas 0 22 275 134 10;
+#X obj 12 46 distance;
+#X obj 12 19 inlet;
+#X obj 12 76 outlet;
+#X text 99 46 reference value;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;

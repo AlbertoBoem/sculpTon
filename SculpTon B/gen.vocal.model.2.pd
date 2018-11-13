@@ -1,0 +1,54 @@
+#N canvas 297 364 561 299 10;
+#X obj -41 45 -~ 0.5;
+#X floatatom -17 111 4 0 0 0 - - -;
+#X obj -17 83 env~ 4096;
+#X text 15 113 RMS in dB;
+#X obj -41 4 noise~;
+#N canvas 112 22 783 235 rampVolume 0;
+#X obj 13 99 line;
+#X obj 13 19 inlet;
+#X obj 13 76 * 100;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array envelopevolA 10 float 5;
+#A 0 0.707143 0.707143 0.707143 0.635715 0.392858 0.0357163 -0.192855
+-0.40714 -0.607139 -0.792853;
+#X coords 0 1 9 -1 200 140 1;
+#X restore 324 37 graph;
+#X obj 13 125 tabread envelopevolA;
+#X obj 181 99 line;
+#X obj 181 76 * 100;
+#X obj 13 200 outlet;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array envelopevolB 10 float 5;
+#A 0 -0.47856 -0.178554 0.0500231 0.250028 0.378602 0.450032 0.535748
+0.564321 0.621465 0.650037;
+#X coords 0 1 9 -1 200 140 1;
+#X restore 547 38 graph;
+#X obj 181 125 tabread envelopevolB;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 1 0 6 0;
+#X connect 2 0 0 0;
+#X connect 4 0 7 0;
+#X connect 5 0 9 0;
+#X connect 6 0 5 0;
+#X connect 9 0 7 0;
+#X restore -13 169 pd rampVolume;
+#X obj -40 195 *~ -1;
+#X obj -13 145 inlet;
+#X obj 101 101 cnv 15 140 50 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#X obj 102 104 cnv 15 100 20 empty empty noise 30 12 0 12 -233017 -260097
+0;
+#X obj 212 109 tgl 15 0 empty empty empty 17 7 0 10 -260097 -1 -1 0
+1;
+#X obj -40 226 throw~ unvoiced;
+#X connect 0 0 2 0;
+#X connect 0 0 6 0;
+#X connect 2 0 1 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 1;
+#X connect 6 0 11 0;
+#X connect 7 0 5 0;
+#X connect 10 0 6 1;
+#X coords 0 -1 1 1 140 50 2 100 100;

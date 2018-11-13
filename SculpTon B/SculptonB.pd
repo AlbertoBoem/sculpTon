@@ -1,0 +1,9 @@
+#N canvas 728 322 628 363 10;
+#X declare -lib mrpeach;
+#X declare -lib mrpeach;
+#X declare -lib iemgui;
+#X declare -lib iemgui;
+#X obj 380 179 ctrl_sound_to_led;
+#X obj -9 144 sound.microphone.ctrl;
+#X obj -12 -4 com.receive.osc_forAl;
+#X obj 80 111 mouthComp;
