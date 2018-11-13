@@ -1,0 +1,10 @@
+#N canvas 52 311 312 256 10;
+#X obj 41 5 - 45.5;
+#X floatatom 103 13 5 0 0 0 - - -;
+#X text 140 14 roll;
+#X obj 41 -23 inlet;
+#X obj 41 37 outlet;
+#X connect 0 0 1 0;
+#X connect 0 0 4 0;
+#X connect 3 0 0 0;
+#X coords 0 -1 1 1 85 22 2 100 10;

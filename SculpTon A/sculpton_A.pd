@@ -1,0 +1,9 @@
+#N canvas 136 71 419 511 10;
+#X declare -lib mrpeach;
+#X declare -lib mrpeach;
+#X obj -267 -93 commApd;
+#X obj -8 -89 com.osc.send;
+#X obj -156 380 anal.distance.filtering;
+#X obj 35 179 anal.imu.filtering;
+#X obj -270 175 anal.mic.features;
+#X obj -267 380 import mrpeach;

@@ -1,0 +1,15 @@
+#N canvas 0 22 270 137 10;
+#X obj 12 45 m_thresholds;
+#X text 93 23 two values for thresholds;
+#X obj 12 13 inlet;
+#X obj 12 84 outlet;
+#X obj 81 83 outlet;
+#X text 21 103 min;
+#X text 91 103 max;
+#X text 135 81 bang;
+#X obj 154 48 loadbang;
+#X msg 96 47;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 2 0 0 0;
+#X connect 9 0 0 1;

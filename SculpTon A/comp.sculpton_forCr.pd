@@ -1,0 +1,9 @@
+#N canvas 354 408 626 307 10;
+#X declare -lib mrpeach;
+#X declare -lib mrpeach;
+#X declare -lib mrpeach;
+#X obj 532 101 ctrl_sound_to_led;
+#X obj -13 102 sound.microphone.ctrl;
+#X obj 205 240 s~ audio_to_led;
+#X obj 313 240 catch~ da_mic_sound_dir;
+#X obj -12 -9 com.receive.osc_forCR;

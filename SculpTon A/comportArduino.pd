@@ -1,0 +1,6 @@
+#N canvas 99 45 434 459 10;
+#X obj -396 -100 commApd;
+#X obj -137 -101 com.osc.send;
+#X obj -137 113 anal.distance.filtering;
+#X obj -137 136 anal.imu.filtering;
+#X obj -397 168 anal.mic.features;

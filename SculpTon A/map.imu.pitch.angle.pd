@@ -1,0 +1,10 @@
+#N canvas 84 212 450 300 10;
+#X floatatom 157 133 5 0 0 0 - - -;
+#X obj 35 90 expr ($f1-45.5)*-1;
+#X text 192 134 Pitch angle;
+#X obj 35 51 inlet;
+#X obj 35 156 outlet;
+#X connect 1 0 0 0;
+#X connect 1 0 4 0;
+#X connect 3 0 1 0;
+#X coords 0 -1 1 1 120 22 2 150 130;

@@ -1,0 +1,41 @@
+#N canvas 169 138 692 370 10;
+#X declare -lib iemgui;
+#X obj 251 35 cnv 15 85 180 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 255 39 knob 32 32 0 1 0 0 mic_vol_s empty empty 0 -8 128 8 -99865
+-1 -1 0 1;
+#X obj 26 132 *~;
+#X obj 41 72 r mic_vol_s;
+#X obj 296 37 tgl 35 0 mic_on_s mic_on_r empty 17 7 0 10 -260097 -1
+-1 0 1;
+#X obj 58 98 r mic_on_s;
+#X obj 26 274 throw~ mic_output;
+#X obj 26 180 hip~;
+#X obj 47 156 r hip_mic;
+#X obj 44 241 s rms_a;
+#X obj 95 240 s rms_b;
+#X obj 309 85 vsl 16 120 0 1 0 0 hip_mic empty empty 0 -9 0 10 -257985
+-1 -1 0 1;
+#X obj 494 154 import iemgui;
+#X obj 265 85 iem_vu 16 120 empty empty -1 -8 0 8 -66577 -1 1 0;
+#X obj 179 119 r rms_a;
+#X obj 179 142 r rms_b;
+#X obj 364 68 loadbang;
+#X obj 375 0 s mic_on_r;
+#X msg 364 94 0;
+#X obj 44 217 extra.rms_to_db;
+#X obj 26 33 adc~;
+#X connect 2 0 7 0;
+#X connect 3 0 2 1;
+#X connect 5 0 2 1;
+#X connect 7 0 6 0;
+#X connect 7 0 19 0;
+#X connect 8 0 7 1;
+#X connect 14 0 13 0;
+#X connect 15 0 13 1;
+#X connect 16 0 18 0;
+#X connect 18 0 4 0;
+#X connect 19 0 9 0;
+#X connect 19 1 10 0;
+#X connect 20 0 2 0;
+#X coords 0 -1 1 1 85 180 2 250 35;
